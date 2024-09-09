@@ -21,7 +21,7 @@ puts "**** Nb de courriels uniques ****:" + courriels_uniques.length.to_s
 
 fichier = File.open(ARGV[1], 'a+')
 courriels_uniques.each do |kourriel| 
-    fichier << kourriel.to_s + "\n"
+    fichier << kourriel.to_s.downcase + "\n"
 end
 
 
